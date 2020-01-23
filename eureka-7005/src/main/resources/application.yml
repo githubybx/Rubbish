@@ -1,0 +1,18 @@
+server:
+  port: 7005
+eureka:
+  instance:
+    hostname: eureka7005.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka/, http://eureka7004.com:7004/eureka/
+spring:
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+

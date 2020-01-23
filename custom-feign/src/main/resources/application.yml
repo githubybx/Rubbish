@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka,http://eureka7004.com:7004/eureka,http://eureka7005.com:7005/eureka
+
+server:
+  port: 9002
+feign:
+  hystrix:
+    enabled: true

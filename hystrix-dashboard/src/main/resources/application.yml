@@ -1,0 +1,8 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      name: config-client
+      profile: dev
+      label: master
+      uri: http://config-3344.com:3344
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver

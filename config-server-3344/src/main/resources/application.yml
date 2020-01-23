@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server-3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/githubybx/Rubbish-service.git #github上面仓库的名称
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 3344

@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    username: ybx
+    password: 510363
+    url: jdbc:mysql://localhost:3306/Bishe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  application:
+    name: Rubbish-Server
+
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
+  instance:
+    instance-id: RubbishService-8001
+    prefer-ip-address: true #访问路径可以显示IP地址
+info:
+  app.name: ybx.class
+  compay.name: ybx.company
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
